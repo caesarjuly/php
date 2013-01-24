@@ -1,5 +1,5 @@
 <?php
-	require("page.php");
+	require("page.inc");
 
 	$homepage = new Page();
 
