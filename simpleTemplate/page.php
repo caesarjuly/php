@@ -41,6 +41,7 @@ class Page
 	{
 		echo "<meta name=\"keywords\"
 			content=\"".$this->keywords."\"/>";
+		echo "<meta content=\"text/html;charset=utf-8\" http-equiv=\"content-type\">";
 	}
 
 	public function DisplayStyles()
