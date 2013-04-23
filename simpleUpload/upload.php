@@ -40,7 +40,7 @@
 		}
 
 		//put the file
-		$upfile = $_FILES['userfile']['name'];
+		$upfile = 'upload/'.$_FILES['userfile']['name'];
 
 		if (is_uploaded_file($_FILES['userfile']['tmp_name'])){
 			if (!move_uploaded_file($_FILES['userfile']['tmp_name'], $upfile)) {
