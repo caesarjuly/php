@@ -19,7 +19,7 @@
 				echo "<li>$file</li>";
 			}
 		}
-		echo '<ul>';
+		echo '</ul>';
 		closedir($dir);
 
 	?>
