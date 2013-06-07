@@ -1,12 +1,12 @@
 <?php
 	session_start();
-
+	include '../debugtools/dump_variables.php';
 	if (isset($_POST['userid']) && isset($_POST['password'])) {
 		//if the user has just tried to log in
 		$userid = $_POST['userid'];
 		$password = $_POST['password'];
 
-		$db_conn = new mysqli('localhost', 'root', '', 'auth');
+		$db_conn = @new mysqli('localhost', 'root', '', 'auth');
 
 		if (mysqli_connect_errno()) {
 			echo 'Connection to database failed :'.mysqli_connect_errno();
