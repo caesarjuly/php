@@ -213,7 +213,7 @@
 		<td><input type="password" name="old_passwd"
 			size="16" maxlength="16"/></td>
 	</tr>
-   <tr><td>New password:</td>
+	<tr><td>New password:</td>
 		<td><input type="password" name="new_passwd"
 			size="16" maxlength="16"/></td>
 	</tr>
