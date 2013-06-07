@@ -3,20 +3,20 @@
 	{
 		//print an HTML header
 ?>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title><?php echo $title;?></title>
-	<style>
-		body{ font-family: Arial, Helvetica, sans-serif; font-size: 13px; }
-		li, td{ font-family: Arial, Helvetica, sans-serif; font-size: 13px; }
-		hr{ color: #3333CC; width: 300;	text-align: left; }
-		a{ color: #000; }
-	</style>
-</head>
-<body>
-	<h1>PHPbookmark</h1>
-	<hr>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<title><?php echo $title;?></title>
+		<style>
+			body{ font-family: Arial, Helvetica, sans-serif; font-size: 13px; }
+			li, td{ font-family: Arial, Helvetica, sans-serif; font-size: 13px; }
+			hr{ color: #3333CC; width: 300;	text-align: left; }
+			a{ color: #000; }
+		</style>
+	</head>
+	<body>
+		<h1>PHPbookmark</h1>
+		<hr>
 <?php
 		if ($title) {
 			do_html_heading($title);
@@ -27,8 +27,8 @@
 	{
 		//print an HTML footer
 ?>
-</body>
-</html>
+	</body>
+	</html>
 <?php
 	}
 
@@ -44,7 +44,7 @@
 	{
 		//output url as link and br
 ?>
- <br><a href="<?php echo $url; ?>"><?php echo $name; ?></a><br>
+ 	<br><a href="<?php echo $url; ?>"><?php echo $name; ?></a><br>
  <?php
  	}
 
@@ -206,27 +206,27 @@
 	{
 		//display the change password form
 ?>
-   <br />
-   <form action="change_passwd.php" method="post">
-   <table width="250" cellpadding="2" cellspacing="0" bgcolor="#cccccc">
-   <tr><td>Old password:</td>
-       <td><input type="password" name="old_passwd"
-            size="16" maxlength="16"/></td>
-   </tr>
+	<br />
+	<form action="change_passwd.php" method="post">
+	<table width="250" cellpadding="2" cellspacing="0" bgcolor="#cccccc">
+	<tr><td>Old password:</td>
+		<td><input type="password" name="old_passwd"
+			size="16" maxlength="16"/></td>
+	</tr>
    <tr><td>New password:</td>
-       <td><input type="password" name="new_passwd"
-            size="16" maxlength="16"/></td>
-   </tr>
-   <tr><td>Repeat new password:</td>
-       <td><input type="password" name="new_passwd2"
-            size="16" maxlength="16"/></td>
-   </tr>
-   <tr><td colspan="2" align="center">
-       <input type="submit" value="Change password"/>
-   </td></tr>
-   </table>
+		<td><input type="password" name="new_passwd"
+			size="16" maxlength="16"/></td>
+	</tr>
+	<tr><td>Repeat new password:</td>
+		<td><input type="password" name="new_passwd2"
+			size="16" maxlength="16"/></td>
+	</tr>
+	<tr><td colspan="2" align="center">
+		<input type="submit" value="Change password"/>
+	</td></tr>
+	</table>
 	</form>
-   <br />
+	<br />
 <?php
 	}
 
@@ -235,17 +235,17 @@
 		//display html form to reset and email password
 ?>
 	<br />
-   <form action="forgot_passwd.php" method="post">
-   <table width="250" cellpadding="2" cellspacing="0" bgcolor="#cccccc">
-   <tr><td>Enter your username</td>
-       <td><input type="text" name="username" size="16" maxlength="16"/></td>
-   </tr>
-   <tr><td colspan=2 align="center">
-       <input type="submit" value="Change password"/>
-   </td></tr>
-   </table>
+	<form action="forgot_passwd.php" method="post">
+	<table width="250" cellpadding="2" cellspacing="0" bgcolor="#cccccc">
+	<tr><td>Enter your username</td>
+		<td><input type="text" name="username" size="16" maxlength="16"/></td>
+	</tr>
+	<tr><td colspan=2 align="center">
+		<input type="submit" value="Change password"/>
+	</td></tr>
+	</table>
 	</form>
-   <br />
+	<br />
 <?php
 	}
 
